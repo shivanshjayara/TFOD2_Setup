@@ -2,9 +2,15 @@
 
 ## download gitignore using curl
 '''bash
-For windows: curl https://raw.githubusercontent.com/c17hawke/general_template/main/.gitignore > .gitignore
-For linux: curl https://raw.githubusercontent.com/c17hawke/general_template/main/.gitignore
-'''
+For windows: curl:
+```bash
+ https://raw.githubusercontent.com/c17hawke/general_template/main/.gitignore > .gitignore
+```
+
+For linux: 
+```bash
+curl https://raw.githubusercontent.com/c17hawke/general_template/main/.gitignore
+```
 
 ## initialise enviornment file setup
 For windows: 
