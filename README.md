@@ -1,7 +1,6 @@
 # COMMANDS
 
 ## download gitignore using curl
-'''bash
 For windows: curl:
 ```bash
  https://raw.githubusercontent.com/c17hawke/general_template/main/.gitignore > .gitignore
