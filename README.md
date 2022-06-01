@@ -42,9 +42,15 @@ git clone https://github.com/tensorflow/models.git
 
 ## Removing .git folder from models directory (./TensorFlow/models/.git/)
 
-* remove .git directory of the TensorFlow/models. Do not delete outside .git directory. Because that git folder will again create a model files into your grepository while pushing into github.
+* remove .git directory of the TensorFlow/models repository to avoid git conflict. 
+* Do not delete outside .git directory. 
+* Because that git folder will again create a model files into your grepository while pushing into github.
 
-* add models folder into .gitignore file i.e. TensorFlow/models. This can be done either by cut paste or by following command as well (You must be at the root directory. So change the directory):
+
+## Adding models repository path to the .gitignore file
+
+* add models folder into .gitignore file i.e. TensorFlow/models. 
+* This can be done either by cut paste or by following command as well 
+  (You must be at the root directory. So change the directory):
 ```bash
 echo "TensorFlow/models" >> .gitignore
-
