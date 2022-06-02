@@ -133,3 +133,18 @@ pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonA
 
 
 ## Installation of Object Detection API
+
+* Firstly copy the file from research folder. For that you need to be in research folder.
+
+```bash
+cp object_detection/packages/tf2/setup.py .
+```
+Above command will save setup.py file in research folder.
+
+* Now you need to install this setup.py file
+
+```bash
+python -m pip install .
+```
+
+
