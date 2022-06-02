@@ -41,14 +41,14 @@ bash init_setup.sh
 ```bash
 python -c "import tensorflow as tf; print(tf.config.list_physical_device('GPU'))"
 ```
-
 * For CPU check:
 ```bash
 python -c "import tensorflow as tf; print(tf.config.list_physical_device('CPU'))"
 ```
 * If you dont specify 'CPU' or 'GPU' then it will show you both of them.
 
-## create a Tensorflow directory
+
+## Installation of Object detection API
 ```bash
 mkdir TensorFlow && cd TensorFlow
 ```
@@ -67,17 +67,18 @@ git clone https://github.com/tensorflow/models.git
 * Because that git folder will again create a model files into your grepository while pushing into github.
 
 
-## Adding models repository path to the .gitignore file
+## Adding 'models' repository path to the .gitignore file
 
-* add models folder into .gitignore file i.e. TensorFlow/models. 
+* add models folder into .gitignore file i.e. "TensorFlow/models". 
 * This can be done either by cut paste or by following command as well 
-  (You must be at the root directory. So change the directory):
+  (You must be at the root directory. So change the directory if not):
 ```bash
 echo "TensorFlow/models" >> .gitignore
 ```
 
 ## Protobuff installation
 
+**By default Protoc is installed in google colab. Check it by this: !protoc --version**
 * Like json and xml files, Google developers invented protobuffer. 
 * Its a way of transferring the data. 
 * It is more faster than those.
@@ -92,4 +93,14 @@ Visit the link - https://github.com/protocolbuffers/protobuf/releases
 sudo apt install -y protobuf-compiler
 ```
 * Unzip it into root folder (its folder name must be 'proc_dir') and add `<PATH TO protoc folder>/bin` into system enviornment   variable.
-*  
+* Check protoc version by: protoc --version
+
+
+## Converting all the protoc files in "research" folder into python files
+* Change the path to "TensorFlow/models/research/". 
+* Enter the command:
+```bash
+protoc object_detection/protos/*.proto --python_out=.
+```
+This way we can convert all the protos files into python file and kept all the files there only. You can check this via:
+"TensorFlow/models/research/object_detection/protos/". Here you can see that all the protos file is now converted into python file.
