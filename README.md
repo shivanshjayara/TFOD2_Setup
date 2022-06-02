@@ -125,7 +125,8 @@ If installed already tyen check by using this command:
 ```bash
 pip freeze | grep Cython
 ```
-*use of 'grep' command: We know that 'pip freeze' command will show all the depencies(libraries) which are installed in our current environment. But what if we need to check just a single depedencies like 'terminado, it will give the line (with its version number) where 'terminado' is present*
+*use of 'grep' command: We know that 'pip freeze' command will show all the depencies(libraries) which are installed in our current environment. But what if we need to check just a single depedencies like 'terminado, it will give the line (with its version number) where 'terminado' is present.*
+
 *It's a kind of search engine for depedencies*
 
 * Download the API:
