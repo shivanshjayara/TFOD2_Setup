@@ -116,7 +116,7 @@ echo "protoc" >> .gitignore
 
 ## Installation of COCO API
 
-To do this we need to install cython. If it is not installed use this command:
+* To do this we need to install cython. If it is not installed use this command:
 ```bash
 pip install Cython
 ```
@@ -125,8 +125,9 @@ If installed already tyen check by using this command:
 ```bash
 pip freeze | grep Cython
 ```
+**use of 'greb' command: We know that 'pip freeze' command will show all the depencies(libraries) which are installed in our current environment. But what if we need to check just a single depedencies like 'terminado, it will give the line (with its version number) where 'terminado' is present**
 
-Download the API:
+* Download the API:
 ```bash
 pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 ```
