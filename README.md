@@ -92,15 +92,44 @@ Visit the link - https://github.com/protocolbuffers/protobuf/releases
 ```bash
 sudo apt install -y protobuf-compiler
 ```
-* Unzip it into root folder (its folder name must be 'proc_dir') and add `<PATH TO protoc folder>/bin` into system enviornment   variable.
+* Unzip it into root folder (its folder name must be 'protoc') and add `<PATH TO protoc folder>/bin` into system enviornment   variable.
 * Check protoc version by: protoc --version
 
 
 ## Converting all the protoc files in "research" folder into python files
 * Change the path to "TensorFlow/models/research/". 
 * Enter the command:
+
 ```bash
+cd TensorFlow/models/research/
 protoc object_detection/protos/*.proto --python_out=.
 ```
 This way we can convert all the protos files into python file and kept all the files there only. You can check this via:
 "TensorFlow/models/research/object_detection/protos/". Here you can see that all the protos file is now converted into python file.
+
+
+## Add "protoc" directory in gitignore file
+
+```bash
+echo "protoc" >> .gitignore
+```
+
+## Installation of COCO API
+
+To do this we need to install cython. If it is not installed use this command:
+```bash
+pip install Cython
+```
+
+If installed already tyen check by using this command:
+```bash
+pip freeze | grep Cython
+```
+
+Download the API:
+```bash
+pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
+```
+
+
+## Installation of Object Detection API
