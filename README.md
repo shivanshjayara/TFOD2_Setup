@@ -1,5 +1,7 @@
 # COMMANDS
 
+## 1) For Local System
+
 ## download gitignore using curl
 For windows: curl:
 ```bash
@@ -33,6 +35,19 @@ Run command:
 bash init_setup.sh
 ```
 
+
+## Tensorflow vwrification
+* For GPU Check:
+```bash
+python -c "import tensorflow as tf; print(tf.config.list_physical_device('GPU'))"
+```
+
+* For CPU check:
+```bash
+python -c "import tensorflow as tf; print(tf.config.list_physical_device('CPU'))"
+```
+* If you dont specify 'CPU' or 'GPU' then it will show you both of them.
+
 ## create a Tensorflow directory
 ```bash
 mkdir TensorFlow && cd TensorFlow
@@ -59,3 +74,22 @@ git clone https://github.com/tensorflow/models.git
   (You must be at the root directory. So change the directory):
 ```bash
 echo "TensorFlow/models" >> .gitignore
+```
+
+## Protobuff installation
+
+* Like json and xml files, Google developers invented protobuffer. 
+* Its a way of transferring the data. 
+* It is more faster than those.
+* It is used to serialized the structure data. It is Open source
+
+Visit the link - https://github.com/protocolbuffers/protobuf/releases
+
+* windows user - search for - protoc-3.20.1-win64.zip
+* mac users - search for - protoc-3.20.1-osx-x86_64.zip
+* linux users -
+```bash
+sudo apt install -y protobuf-compiler
+```
+* Unzip it into root folder (its folder name must be 'proc_dir') and add `<PATH TO protoc folder>/bin` into system enviornment   variable.
+*  
