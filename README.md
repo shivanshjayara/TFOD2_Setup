@@ -149,5 +149,13 @@ Above command will save setup.py file in research folder.
 ```bash
 python -m pip install .
 ```
+*If we get error while installing setup.py from above command, then check protos upgrade. 
+
+## Test your installation
+
+* Stay in 'research' folder.
+```bash
+python object_detection/builders/model_builder_tf2_test.py
+```
 
 
