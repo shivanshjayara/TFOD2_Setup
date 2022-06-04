@@ -149,7 +149,7 @@ Above command will save setup.py file in research folder.
 ```bash
 python -m pip install .
 ```
-*If we get error while installing setup.py from above command, then check protos upgrade. 
+*If we get error while installing setup.py from above command, then check protoc upgrade*
 
 ## Test your installation
 
@@ -158,4 +158,19 @@ python -m pip install .
 python object_detection/builders/model_builder_tf2_test.py
 ```
 
+## Run test sample
 
+*  Create workspace/example_1 directory in project root
+* Suppose you dont have parent directory like "workspace" the use "-p" command. So even if parent directory say "workspace" folder is not created, it will automatically create it and then it will create child folder (example_1)
+* Make sure you are at the "TFOD2" folder i.e. root folder. If not do change it
+
+  ```bash
+  mkdir -p workspace/example_1
+  ```
+* Change directory to example 1.
+  ```bash
+  cd workspace/example_1
+  ```
+** Download sample code in this directory using curl command. You can either download .py file or .ipynb notebook.
+  ```bash
+  curl https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/2.2.0/_downloads/7f6123c070712ed53dd2521219dd011c/plot_object_detection_simple.ipynb > plot_object_detection_simple.ipynb
