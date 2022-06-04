@@ -171,6 +171,8 @@ python object_detection/builders/model_builder_tf2_test.py
   ```bash
   cd workspace/example_1
   ```
-** Download sample code in this directory using curl command. You can either download .py file or .ipynb notebook.
+* Download sample code in this directory using curl command. You can either download .py file or .ipynb notebook.
   ```bash
   curl https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/2.2.0/_downloads/7f6123c070712ed53dd2521219dd011c/plot_object_detection_simple.ipynb > plot_object_detection_simple.ipynb
+  ```
+
