@@ -31,7 +31,7 @@ repository link then ".git" then "hash(#)" then "subdirectory='Directory Name'" 
 ```bash
 pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 ```
-
+*At first it may not install directly at this stage. So wait for theinstallation of COCO API step.*
 
 All the above commands can be written inside the init_setup.sh file also.
 To commit the changes in the github we need to initialise our gitub repository. We can also do it in init_setup.sh file'
@@ -112,8 +112,8 @@ Visit the link - https://github.com/protocolbuffers/protobuf/releases
 sudo apt install -y protobuf-compiler
 ```
 * Above command can be use in google colab also if we want to update the 'protobuf compiler'.
-
-* Unzip it into root folder (its folder name must be 'protoc') and add `<PATH TO protoc folder>/bin` into system enviornment   variable.
+* But in colab do not need to install 'protobuf'. It is already installed in colab.
+* Unzip it into root folder (its folder name must be 'protoc') and add `<PATH TO protoc folder>/bin` into system enviornment   variable.( This is for LOcal System Only, not for colab)
 * Check protoc version by: protoc --version
 
 
